@@ -14,7 +14,7 @@ function App() {
 
 
 
-      <button className="bg-orange-400" onClick={() => setShow(!show)}   >{show ? "gizlet" : "goster"}</button>
+      <button className="bg-orange-400 m-4 p-2 rounded-lg border-cyan-200 border-2" onClick={() => setShow(!show)}   >{show ? "Hide" : "Show"}</button>
 
 
       {show && <Effect1 />}

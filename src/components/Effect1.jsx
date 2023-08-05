@@ -21,14 +21,15 @@ const Effect1 = () => {
   }, []);
 
   return (
-    <div>
-      <button onClick={() => setCount(count + 1)}>increment</button>
+    <div className="bg-purple-500">
+      <button className="bg-yellow-300  m-4 p-2 rounded-lg border-cyan-200 border-2" onClick={() => setCount(count + 1)}>increment</button>
 
-      {count}
+    <div className="bg-yellow-300 w-8 m-4 p-2 rounded-ss-full border-cyan-200 border-2"> {count}</div> 
+
 
       {getData.length > 1
-        ? getData?.map((item, index) => <div key={index}>{item.title}</div>)
-        : getData.title}
+        ? getData?.map((item, index) => <div className="bg-green-400 w-max  p-2 rounded-lg border-red-600 m-1 border-2" key={index}>{item.title}</div>)
+        : <div className="bg-pink-500 w-max m-4 p-2 rounded-lg border-cyan-200 border-2">{getData.title}</div> }
     </div>
   );
 };
